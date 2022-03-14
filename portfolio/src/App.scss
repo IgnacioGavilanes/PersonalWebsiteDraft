@@ -1,0 +1,16 @@
+//\\// VARIABLES \\//\\
+$bg: #E7E7E5 ;
+$discreet: #7D7D7D;
+$accent: #EF0100;
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $bg;
+  }
+
+::selection {
+  background: #ecb8b8;
+}

@@ -1,0 +1,18 @@
+.footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100vw;
+    height: 4rem;
+    display: inline-block;
+    background-color: white;
+    .cr {
+        margin-top: 2rem;
+        float: left;
+        background-color: white;
+    }
+    .silly{
+        margin-top: 2rem;
+        float: right;
+        background-color: white;
+    }
+}

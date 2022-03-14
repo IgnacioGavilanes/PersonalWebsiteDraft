@@ -1,0 +1,19 @@
+$bg: #E7E7E5 ;
+$discreet: #7D7D7D;
+$accent: #EF0100;
+
+.subTitle {
+    font-size: 1.9em;
+}
+.icon{
+    color: black;
+    transition: 0.4s;
+    font-size: 3em;
+    text-align: center;
+    margin: 1rem;
+
+    &:hover {
+        color: $accent;
+        transform: scale(1.2);
+    }
+}

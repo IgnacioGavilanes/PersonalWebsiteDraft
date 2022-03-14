@@ -1,0 +1,47 @@
+$bg: #E7E7E5 ;
+$discreet: #7D7D7D;
+$accent: #EF0100;
+
+#hero {
+    padding: 3rem;
+    .title {
+        color:$accent;
+        font-size: 3.5em;
+    }
+    p {
+        margin-top: 2rem;
+        font-size: 1.1em;
+        // letter-spacing: 0.5em;
+        line-height: 1.7rem;
+        .highlighted {
+            color: $accent;
+            font-size: 0.8em;
+            font-weight: 400;
+            font-style: italic;
+        }
+    }
+    #cta {
+        margin-top: 3rem;
+        border: none;
+        width: 8rem;
+        height: 3rem;
+        border-radius: 5rem;
+        color: $bg;
+        background-color: black;
+        font-size: 1.4em;
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+            background-color: $accent;
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+    
+
+    
+}
+
+

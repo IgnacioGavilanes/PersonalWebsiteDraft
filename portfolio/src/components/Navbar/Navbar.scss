@@ -1,0 +1,80 @@
+$bg: #E7E7E5 ;
+$discreet: #7D7D7D;
+$accent: #EF0100;
+
+#navbar {
+    display: flex; //Elements go side by side
+    justify-content: space-between; //Pushes content as far apart from each other as possible
+    align-items: center; /*Aligns children accross the y-axis if flex-direction is row (default)
+                         (smallest element will be aligned with center of larger element)*/
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background: $bg;
+    // backdrop-filter: blur(2px);
+    // -webkit-backdrop-filter: blur(2px);
+    // z-index: 100;
+    width: 100vw;                      
+    height: 10rem;
+    // position: fixed;
+    font-size: 1.2em;
+    #logo {
+    }
+    .menu{
+        ul {}
+        li {
+            list-style: none;
+            padding: 0.3rem;
+            display: block;
+            cursor: pointer;
+        }
+        li:hover {
+            color: $accent;
+            font-weight: bold;
+        }
+    }
+    #burger {
+        display: none;
+        position: absolute;
+        right: 3rem; //Same as padding for logo and list elements
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #navbar{
+        // display: block;
+        #burger {
+            display: flex;
+        }
+
+        .menu {
+            display: none;
+            ul {
+                width: 100%;
+            }
+            li {
+                text-align: center;
+            }
+
+        }
+
+        .mobileActive {
+            display: flex;
+            position: absolute;
+            
+            top: 10rem;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            width: 50vw; 
+
+            font-size: 2em;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+$bg: #E7E7E5 ;
+$discreet: #7D7D7D;
+$accent: #EF0100;
+
+.contact {
+    padding: 3rem;
+    margin-top: 3rem;
+    .title {
+        color: $accent;
+        font-size: 3.5em;
+    }
+    .contactParagraph {
+        margin-top: 2rem;
+        font-size: 1.1em;
+        // letter-spacing: 0.5em;
+        line-height: 1.7rem;
+    }
+    #contactForm {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+
+        .data {
+            .nameContainer {
+                position: absolute;
+                left: 20%;
+                .nameLbl{
+                    margin-right: 2rem;
+                    
+                }
+                #name {        
+                    // position: absolute;        
+                    // left: 8rem;
+                }
+            }
+            
+            .emailContainer {
+                margin-top: 2rem;
+                position: absolute;
+                left: 20%;
+                .emailLbl{
+                    margin-top: 2rem;
+                    margin-right: 2rem;
+                }
+                #email{
+                    // position: absolute;        
+                }
+            }
+            
+        }
+
+        .msg{
+            position: absolute;
+            left: 20%;
+            margin-top: 4rem;
+            .messageLbl{
+                margin-right: 2rem;
+            }
+            #message {
+                position: absolute;        
+                left: 8rem;
+            }
+        }
+
+        .submit-form {
+            margin-top: 10rem;
+            border: none;
+            width: 8rem;
+            height: 3rem;
+            border-radius: 5rem;
+            color: $bg;
+            background-color: black;
+            font-size: 1.4em;
+            cursor: pointer;
+            transition: 0.4s;
+            
+
+            &:hover {
+                background-color: $accent;
+            }
+
+            &:active {
+                transform: scale(0.9);
+            }
+        }
+        #name, #email, #message {
+            border-radius: 10px;
+            box-shadow: none;
+            width: 10rem;
+            height: 3rem;
+            padding: 1rem;
+
+            &:focus{
+                outline: none !important;
+                border:1px solid $accent;
+            }
+        }
+
+        
+    }
+    .contactIcon {
+        cursor: pointer;
+        font-size: 2em;
+    }
+}
+
+

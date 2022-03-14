@@ -1,0 +1,73 @@
+$bg: #E7E7E5 ;
+$discreet: #7D7D7D;
+$accent: #EF0100;
+
+.xpContainer {
+    .course{
+        // display: flex; //THIS WILL GO UNCOMMENTED FOR DESKTOP VERSION
+        margin-top: 12rem;
+
+        //right side
+        .info {
+            .subtitle {
+                font-size: 2.5em;
+            }
+            .institute {
+                margin-top: 1.5rem;
+                font-size: 1.5em;
+                font-weight: 400;
+            }
+            .modality{
+                font-size: 1em;
+                font-weight: 100;
+                color: $discreet;
+            }
+            .dates {
+                margin-top: 1.5rem;
+                font-size: 1.2em;
+                font-weight: 100;
+                color: $accent;
+            }
+            .repoLink{
+                text-decoration: none;
+                .repo {
+                    margin-top: 1.5rem;
+                    font-size: 1.5em;
+                    font-weight: 100;
+                    cursor: pointer;
+                    transition: 0.4s;
+                    color: black;
+                    &:active {
+                        color: $accent;
+                        transform: scale(0.9);
+                    }
+                }
+            }
+        }
+
+        //left side
+        .topics {
+            display: flex;
+            color: white;
+            margin-top: 3.5rem;
+            margin-left: 2rem;
+            font-size: 1.2em;
+            line-height: 1.7rem;
+            padding: 0.5rem;
+            background-color: $accent;
+            justify-content: center;
+            .column1, .column2 {    
+                width: 8rem;
+                height: 8rem;
+                list-style: none;
+                li {
+                    background-color: $accent;
+                }
+            }
+            .column1 {
+                margin-left: 1rem;
+            }
+        }
+
+    }
+}
